@@ -6,8 +6,16 @@ class Welcome extends Component {
     super(props);
     this.state = {};
   }
+
   render() {
-    return <h1>class component</h1>;
+    console.log(this.props);
+    return (
+      // props didalam class component harus menggunakan 'this'
+      // 'prop' value is immutable or cannot be change
+      <h1>
+        Hello {this.props.name} like {this.props.hero}{" "}
+      </h1>
+    );
   }
 }
 

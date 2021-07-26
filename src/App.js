@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Greet from "./component/Greet";
 import Welcome from "./component/Welcome";
+import Hallo from "./component/Hallo";
 
 class App extends Component {
   render() {
@@ -9,8 +10,17 @@ class App extends Component {
       <>
         <div className="card">
           <div className="App">
-            <Greet />
-            <Welcome />
+            {/* --- name dan hero ini adalah props agar menjadi dinamis --- */}
+            <Greet name="Jooko" hero="batman">
+              {/* tag <p> dalam Greet menjadi children dari Tag Greet */}
+              <p>this is children props from Greed</p>
+            </Greet>
+            <Greet name="diana" hero="justin bieber" />
+            <Greet name="smart" hero="brook" />
+            <Welcome name="Jooko" hero="batman" />
+            <Welcome name="smart" hero="brook" />
+            <Welcome name="diana" hero="justin bieber" />
+            {/* <Hallo /> */}
           </div>
         </div>
       </>
