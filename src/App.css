@@ -1,0 +1,19 @@
+.card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+  width: auto;
+  box-shadow: 0 2px 2px #ccc;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.App {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+p {
+  margin: 0px;
+}
