@@ -24,6 +24,7 @@ import Counter from "./component/Counter";
 import FunctionalClick from "./component/FunctionalClick";
 import ClassClick from "./component/ClassClick";
 import EventBind from "./component/EventBind";
+import ParentComponent from "./component/ParentComponent";
 
 class App extends Component {
   render() {
@@ -31,6 +32,8 @@ class App extends Component {
       <>
         <div className="card">
           <div className="App">
+            <ParentComponent />
+            <br />
             <EventBind />
             <FunctionalClick />
             <ClassClick />
