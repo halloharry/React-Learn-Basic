@@ -17,10 +17,13 @@
 import React, { Component } from "react";
 import "./App.css";
 import Greet from "./component/Greet";
-import Welcome from "./component/Welcome";
-import Hallo from "./component/Hallo";
-import Message from "./component/message";
+// import Welcome from "./component/Welcome";
+// import Hallo from "./component/Hallo";
+// import Message from "./component/message";
 import Counter from "./component/Counter";
+import FunctionalClick from "./component/FunctionalClick";
+import ClassClick from "./component/ClassClick";
+import EventBind from "./component/EventBind";
 
 class App extends Component {
   render() {
@@ -28,9 +31,13 @@ class App extends Component {
       <>
         <div className="card">
           <div className="App">
+            <EventBind />
+            <FunctionalClick />
+            <ClassClick />
+            <br />
             <Counter />
             {/* --- name dan hero ini adalah props agar menjadi dinamis --- */}
-            <Greet name="Jooko" hero="batman">
+            <Greet name="Jooko" hero="john cena">
               {/* tag <p> dalam Greet menjadi children dari Tag Greet */}
               <p>this is children props from Greed</p>
             </Greet>
@@ -38,9 +45,9 @@ class App extends Component {
             <Greet name="smart" hero="brook" />
             <Welcome name="Jooko" hero="batman" />
             <Welcome name="smart" hero="brook" />
-            <Welcome name="diana" hero="justin bieber" /> */}
+            <Welcome name="diana" hero="justin bieber" />
             <Hallo />
-            <Message />
+            <Message /> */}
           </div>
         </div>
       </>
