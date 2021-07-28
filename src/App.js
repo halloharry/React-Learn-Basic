@@ -20,6 +20,7 @@ import Greet from "./component/Greet";
 import Welcome from "./component/Welcome";
 import Hallo from "./component/Hallo";
 import Message from "./component/message";
+import Counter from "./component/Counter";
 
 class App extends Component {
   render() {
@@ -27,6 +28,7 @@ class App extends Component {
       <>
         <div className="card">
           <div className="App">
+            <Counter />
             {/* --- name dan hero ini adalah props agar menjadi dinamis --- */}
             <Greet name="Jooko" hero="batman">
               {/* tag <p> dalam Greet menjadi children dari Tag Greet */}
