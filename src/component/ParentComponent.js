@@ -16,6 +16,7 @@ class ParentComponent extends Component {
   greedParent() {
     alert(`hello  ${this.state.parentName}`);
   }
+  // menerima funngsi dari child
   greedParent2(childName) {
     alert(`hello  ${this.state.parentName} ini dari ${childName}`);
   }
